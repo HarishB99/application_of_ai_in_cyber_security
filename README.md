@@ -2,7 +2,7 @@
 
 * The general objective of this project is to investigate the various deep learning techniques available to solve selected cyber security related problems.
 
-* The objective of this particular project is to make use of deep learning techniques to classify malware quickly without resorting to manual analysis of source codes and behaviour of the malware.
+* The objective of [this](https://github.com/HarishB99/application_of_ai_in_cyber_security) particular project is to make use of deep learning techniques to classify malware quickly without resorting to manual analysis of source codes and behaviour of the malware.
 
 ## Dataset
 
