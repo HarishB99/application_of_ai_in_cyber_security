@@ -26,7 +26,7 @@ Install the p7zip-full package on Ubuntu Linux (This was the linux distribution 
 
 The p7zip-full package is installed to make use of the utilities in this package to extract 7-zip archive files.
 
-Download `train.7z` from the [challenge website](https://www.kaggle.com/c/malware-classification/data) (Note that you will have to create an account with Kaggle to download the file.)
+Download `train.7z` from the [challenge website](https://www.kaggle.com/c/malware-classification/data) (Note that you will have to create an account with [Kaggle](https://www.kaggle.com/) to download the file.)
 
 ### CNN - Convolutional Neural Network
 
