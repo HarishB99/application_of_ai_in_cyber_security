@@ -47,7 +47,7 @@ You are now ready to execute the Python notebooks in the `CNN/` directory
 
 Please note that you will have to execute the codes in `CNN/byte_to_image_converter.ipynb` to convert the `.bytes` files into `.png` files before executing `CNN/main.ipynb`
 
-### LSTM
+### LSTM - Long Short Term Memory
 
 Before you proceed to execute the Python notebooks in the `LSTM/` folder, perform the following:
 
