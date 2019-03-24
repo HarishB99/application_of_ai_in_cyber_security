@@ -70,7 +70,7 @@ You can simply execute `LSTM/main.ipynb` to run the program
 
 Before you proceed to execute the Python notebooks in the `CNN/testing/` folder, perform the following:
 
-Create a directory inside the `CNN/testing/` folder of this git repo names `test_cases`
+Create a directory inside the `CNN/testing/` folder of this git repo named `test_cases`
 
 Copy over the bytecodes which you want the model to analyse and predict into this directory you have created (which is `CNN/testing/test_cases` in this git repo)
 
