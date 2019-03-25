@@ -76,4 +76,4 @@ Copy over the bytecodes which you want the model to analyse and predict into thi
 
 You are now ready to execute the Python notebooks in the `CNN/testing/` directory
 
-You can simply execute `CNN/testing/test.ipynb` to run the program
+You can simply execute `CNN/testing/test.ipynb` to run the program. Alternatively, you can also execute `CNN/testing/test.py` instead.
