@@ -54,7 +54,7 @@ def load_image_as_np(filename):
             - a 3D numpy array representing the loaded image
     """
     try:
-        img = image.load_img(filename, grayscale=True)  # for newer versions, use "color_mode='grayscale'" instead of "grayscale=True"
+        img = image.load_img(filename, color_mode='grayscale')  # for newer versions, use "color_mode='grayscale'"; For older versions, use "grayscale=True"
         return np.atleast_3d(img)
     except Exception as error:
         logging.error(traceback.format_exc())
@@ -72,7 +72,7 @@ def resize_from_file(filename, dest, size=(128, 128)):
     """
     try:
         imgname = os.path.basename(filename)
-        img = image.load_img(filename, grayscale=True)  # for newer versions, use "color_mode='grayscale'" instead of "grayscale=True"
+        img = image.load_img(filename, color_mode='grayscale')  # for newer versions, use "color_mode='grayscale'"; For older versions, use "grayscale=True"
         img = img.resize(size, Image.LANCZOS)
         img.save(os.path.join(dest, imgname))
     except Exception as error:

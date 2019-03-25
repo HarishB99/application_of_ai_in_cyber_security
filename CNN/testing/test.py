@@ -1,20 +1,13 @@
-import os, sys, time
+import os, sys, time, subprocess
 import numpy as np
 import pandas as pd
-# import matplotlib.pyplot as plt
 from PIL import Image
 from keras import models
-# from keras import layers
 from keras import backend as K
-# from keras.utils import to_categorical
 from keras.preprocessing import image
-# from imblearn.over_sampling import SMOTE
-# from sklearn.metrics import accuracy_score, confusion_matrix
-# from sklearn.model_selection import StratifiedKFold
 
 sys.path.insert(0, os.path.abspath('../utils/'))
 import util as utils
-# get_ipython().run_line_magic('matplotlib', 'inline')
 
 K.clear_session()
 
@@ -49,6 +42,8 @@ def load_images_for_prediction(bytecodes_files, test_case_images_dir):
 
 def load_model(model_file):
     return models.load_model(model_file)
+
+subprocess.call('./convert_exe_to_bytes.sh')
 
 model_file = '../final_trained_model.h5'
 bytecodes_dir = './test_cases/'

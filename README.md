@@ -28,6 +28,8 @@ The p7zip-full package is installed to make use of the utilities in this package
 
 Download `train.7z` from the [challenge website](https://www.kaggle.com/c/malware-classification/data) (Note that you will have to create an account with [Kaggle](https://www.kaggle.com/) to download the file.)
 
+Please note the call to `keras.preprocessing.image,load_image()` function in the two functions in `CNN/utils/utils.py`, namely `load_image_as_np()` and `resize_from_file()`. For newer versions of the `keras.preprocessing.image` library, you will have to use `color_mode='grayscale'` to load grayscale images. For older versions, you need to use `grayscale=True`. This reminder is also documented in the comments for the two calls to the said library made in `CNN/utils/utils.py`.
+
 ### CNN - Convolutional Neural Network
 
 Before you proceed to execute the Python notebooks in the `CNN/` folder, perform the following:
@@ -70,10 +72,10 @@ You can simply execute `LSTM/main.ipynb` to run the program
 
 Before you proceed to execute the Python notebooks in the `CNN/testing/` folder, perform the following:
 
-Create a directory inside the `CNN/testing/` folder of this git repo named `test_cases`
+Create a directory inside the `CNN/testing/` folder of this git repo named `test_cases_exe`
 
-Copy over the bytecodes which you want the model to analyse and predict into this directory you have created (which is `CNN/testing/test_cases` in this git repo)
+Copy over the executable files (.exe) which you want the model to analyse and predict into this directory you have created (which is `CNN/testing/test_cases_exe` in this git repo)
 
 You are now ready to execute the Python notebooks in the `CNN/testing/` directory
 
-You can simply execute `CNN/testing/test.ipynb` to run the program. Alternatively, you can also execute `CNN/testing/test.py` instead.
+You can simply execute `CNN/testing/test.ipynb` or `CNN/testing/test.py` to run the program. It is simpler to run the latter.
