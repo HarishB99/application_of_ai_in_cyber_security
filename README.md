@@ -8,6 +8,28 @@ The objective of [this](https://github.com/HarishB99/application_of_ai_in_cyber_
 
 The dataset used for this project was retrieved from the Kaggle website, more specifically from their [Microsoft Malware Classification Challenge (BIG 2015)](https://www.kaggle.com/c/malware-classification/data) website
 
+## Activating and deactivating conda environment
+
+* The conda environment is where your Python notebooks and codes are usually executed. It contains all the python packages that has been installed onto the computer.
+
+* To activate it, run the following:
+
+	* `conda activate`
+
+* To deactivate it, simply run the following:
+	
+	* `conda deactivate`
+
+* If your conda environment has been activated, you should be able to see your terminal prompt change, like so:
+	
+	* `(<conda environment name>) user@domain $`
+
+* For example, the default and main conda environment is named 'base':
+	
+	* `(base) student@localhost $`
+
+* Note that you will have to activate your conda environment for newer Anaconda Python distributions before proceeding to run the following commands.
+
 ## Getting Started
 
 Firstly, clone this github repo to your home directory (or any other directory you want to) of the Linux Virtual Machine you are using (A Virtual Machine that was running the Ubuntu Linux distribution was used for this project.). We will call this directory INSTALL_PATH:
