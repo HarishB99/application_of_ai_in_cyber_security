@@ -2,6 +2,28 @@
 
 * Refer to the following website for instructions on how to install the anaconda distribution on Linux OS: http://docs.anaconda.com/anaconda/install/linux/
 
+## Activating and deactivating conda environment
+
+* The conda environment is where your Python notebooks and codes are usually executed. It contains all the python packages that has been installed onto the computer.
+
+* To activate it, run the following:
+
+	* `conda activate`
+
+* To deactivate it, simply run the following:
+	
+	* `conda deactivate`
+
+* If your conda environment has been activated, you should be able to see your terminal prompt change, like so:
+	
+	* `(<conda environment name>) user@domain $`
+
+* For example, the default and main conda environment is named 'base':
+	
+	* `(base) student@localhost $`
+
+* Note that you will have to activate your conda environment for newer Anaconda Python distributions before proceeding to run the following commands.
+
 ## Post-Installation of Anaconda distribution of Ubuntu 18.04
 
 * To avoid strange errors during installation of new python packages using conda, run the following two commands in the terminal:
@@ -64,26 +86,6 @@
 	* `conda install -c anaconda scikit-learn`
 
 * Note that -y simply means install without prompts --> This flag is optional
-
-## Activating and deactivating conda environment
-
-* The conda environment is where your Python notebooks and codes are usually executed. It contains all the python packages that has been installed onto the computer.
-
-* To activate it, run the following:
-
-	* `conda activate`
-
-* To deactivate it, simply run the following:
-	
-	* `conda deactivate`
-
-* If your conda environment has been activated, you should be able to see your terminal prompt change, like so:
-	
-	* `(<conda environment name>) user@domain $`
-
-* For example, the default and main conda environment is named 'base':
-	
-	* `(base) student@localhost $`
 
 ## Starting Jupyter Notebook on your local machine
 
