@@ -108,7 +108,7 @@ cmd_args_parser.add_argument('-d', '--directory', '--dir', required=True, type=v
 cmd_args = cmd_args_parser.parse_args()
 
 bytecodes_dir = cmd_args.directory
-test_case_images_dir = os.path.join(bytecodes_dir, 'test_case_images')
+test_case_images_dir = os.path.join(bytecodes_dir, 'images')
 
 bytecode_files = [ os.path.splitext(os.path.basename(file))[0] for file in sorted( glob( os.path.abspath(bytecodes_dir)+'/*.bytes' ) ) ]
 

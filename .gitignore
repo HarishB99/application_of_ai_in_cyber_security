@@ -1,3 +1,4 @@
 documentation/bytecodes/**
 **/__pycache__
 CNN/testing/test_case*/
+CNN/my_own_testing/
