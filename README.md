@@ -8,6 +8,12 @@ The objective of [this](https://github.com/HarishB99/application_of_ai_in_cyber_
 
 The dataset used for this project was retrieved from the Kaggle website, more specifically from their [Microsoft Malware Classification Challenge (BIG 2015)](https://www.kaggle.com/c/malware-classification/data) website
 
+## Updating local codebase
+
+* Simply run the following command in your git repository to get the latest version of the codebase:
+
+	* `git pull origin master`
+
 ## Activating and deactivating conda environment
 
 * The conda environment is where your Python notebooks and codes are usually executed. It contains all the python packages that has been installed onto the computer.
@@ -28,7 +34,7 @@ The dataset used for this project was retrieved from the Kaggle website, more sp
 	
 	* `(base) student@localhost $`
 
-* Note that you will have to activate your conda environment for newer Anaconda Python distributions before proceeding to run the following commands.
+* Note that you will have to activate your conda environment, if you have installed a newer version of the Anaconda Python distribution, before proceeding to run the following commands.
 
 ## Getting Started
 
@@ -92,12 +98,25 @@ You can simply execute `LSTM/main.ipynb` to run the program
 
 ### Testing CNN model
 
+The purpose of this testing program is to classify samples malware bytecodes (`.bytes` files with their PE headers removed) into their respective malware families.
+
 Before you proceed to execute the Python notebooks in the `CNN/testing/` folder, perform the following:
 
-Create a directory inside the `CNN/testing/` folder of this git repo named `test_cases_exe`
+<!-- Create a directory inside the `CNN/testing/` folder of this git repo named `test_cases_exe`
 
-Copy over the executable files (.exe) which you want the model to analyse and predict into this directory you have created (which is `CNN/testing/test_cases_exe` in this git repo)
+Copy over the executable files (.exe) which you want the model to analyse and predict into this directory you have created (which is `CNN/testing/test_cases_exe` in this git repo) -->
+
+Execute `CNN/testing/byte_to_image_converter.ipynb` or `CNN/testing/byte_to_image_converter.py` to convert the `.bytes` files into `.png` files before executing `CNN/main.ipynb`. For this, you will have to create a directory somewhere in your filesystem to store these bytecodes (`.bytes` files with their PE headers removed) that you want the program to classify. We will refer to this directory as `BYTECODES_DIR`. 
+
+	`cd INSTALL_PATH/application_of_ai_in_cyber_security/CNN/testing/`
+	`python byte_to_image_converter.py -d BYTECODES_DIR`
+
+If you are executing the Python notebook instead (`CNN/testing/byte_to_image_converter.ipynb`), you will have to edit the variable `arguments_list` in cell 9 to match the above.
 
 You are now ready to execute the Python notebooks in the `CNN/testing/` directory
 
-You can simply execute `CNN/testing/test.ipynb` or `CNN/testing/test.py` to run the program. It is simpler to run the latter.
+You can simply execute `CNN/testing/malware_sorter.ipynb` or `CNN/testing/malware_sorter.py` to run the program. It is simpler to run the latter.
+
+	`python malware_sorter.py -d BYTECODES_DIR`
+
+If you are executing the Python notebook instead (`CNN/testing/malware_sorter.ipynb`), you will have to edit the variable `arguments_list` in cell 10 to match the above.
