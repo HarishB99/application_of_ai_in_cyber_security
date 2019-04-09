@@ -35,8 +35,8 @@
 
 * Run the following commands in the terminal:
 
-	* `conda install -y tensorflow`
-	* `conda install -y keras`
+	* `conda install tensorflow -y`
+	* `conda install keras -y`
 
 * Note that -y simply means install without prompts --> This flag is optional
 
@@ -73,7 +73,7 @@
 
 * To install pandas using conda, run the following:
 
-	* `conda install -c anaconda pandas`
+	* `conda install -c anaconda pandas -y`
 
 * Note that -y simply means install without prompts --> This flag is optional
 
@@ -83,7 +83,7 @@
 
 * To install it using conda, run the following:
 
-	* `conda install -c anaconda scikit-learn`
+	* `conda install -c anaconda scikit-learn -y`
 
 * Note that -y simply means install without prompts --> This flag is optional
 
