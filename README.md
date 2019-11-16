@@ -56,7 +56,7 @@ The p7zip-full package is installed to make use of the utilities in this package
 
 Download `train.7z` from the [challenge website](https://www.kaggle.com/c/malware-classification/data) (Note that you will have to create an account with [Kaggle](https://www.kaggle.com/) to download the file.)
 
-Please note the call to `keras.preprocessing.image,load_image()` function in the two functions in `CNN/utils/utils.py`, namely `load_image_as_np()` and `resize_from_file()`. For newer versions of the `keras.preprocessing.image` library, you will have to use `color_mode='grayscale'` to load grayscale images. For older versions, you need to use `grayscale=True`. This reminder is also documented in the comments for the two calls to the said library made in `CNN/utils/utils.py`.
+Please note the call to `keras.preprocessing.image.load_image()` function in the two functions in `CNN/utils/utils.py`, namely `load_image_as_np()` and `resize_from_file()`. For newer versions of the `keras.preprocessing.image` library, you will have to use `color_mode='grayscale'` to load grayscale images. For older versions, you need to use `grayscale=True`. This reminder is also documented in the comments for the two calls to the said library made in `CNN/utils/utils.py`.
 
 ### CNN - Convolutional Neural Network
 
