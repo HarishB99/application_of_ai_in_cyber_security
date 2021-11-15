@@ -22,7 +22,7 @@ The dataset used for this project was retrieved from the Kaggle website, more sp
 
 	* `conda activate`
 
-* To deactivate it, simply run the following:
+* To deactivate it, run the following:
 	
 	* `conda deactivate`
 
@@ -34,11 +34,11 @@ The dataset used for this project was retrieved from the Kaggle website, more sp
 	
 	* `(base) student@localhost $`
 
-* Note that you will have to activate your conda environment, if you have installed a newer version of the Anaconda Python distribution, before proceeding to run the following commands.
+* Note that you will have to activate your conda environment before proceeding to run the following commands, if you have installed a newer version of the Anaconda Python distribution.
 
 ## Getting Started
 
-Firstly, clone this github repo to your home directory (or any other directory you want to) of the Linux Virtual Machine you are using (A Virtual Machine that was running the Ubuntu Linux distribution was used for this project.). We will call this directory INSTALL_PATH:
+Firstly, clone this github repo to your home directory (or any other directory you want to) of the Linux virtual machine you are using (a virtual machine running the Ubuntu Linux distro was used for this project). We will call this directory INSTALL_PATH:
 
 ```shell
 cd INSTALL_PATH  # Where INSTALL_PATH is the path in which you will be cloning this git repo
@@ -119,6 +119,8 @@ You are now ready to execute the Python notebooks in the `CNN/testing/` director
 
 You can simply execute `CNN/testing/malware_sorter.ipynb` or `CNN/testing/malware_sorter.py` to run the program. It is simpler to run the latter.
 
-`python malware_sorter.py -d BYTECODES_DIR`
+```shell
+python malware_sorter.py -d BYTECODES_DIR
+```
 
 If you are executing the Python notebook instead (`CNN/testing/malware_sorter.ipynb`), you will have to edit the variable `arguments_list` in cell 10 to match the above.
