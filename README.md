@@ -108,8 +108,10 @@ Copy over the executable files (.exe) which you want the model to analyse and pr
 
 Execute `CNN/testing/byte_to_image_converter.ipynb` or `CNN/testing/byte_to_image_converter.py` to convert the `.bytes` files into `.png` files before executing `CNN/main.ipynb`. For this, you will have to create a directory somewhere in your filesystem to store these bytecodes (`.bytes` files with their PE headers removed) that you want the program to classify. We will refer to this directory as `BYTECODES_DIR`. 
 
-	`cd INSTALL_PATH/application_of_ai_in_cyber_security/CNN/testing/`
-	`python byte_to_image_converter.py -d BYTECODES_DIR`
+```shell
+cd INSTALL_PATH/application_of_ai_in_cyber_security/CNN/testing/
+python byte_to_image_converter.py -d BYTECODES_DIR
+```
 
 If you are executing the Python notebook instead (`CNN/testing/byte_to_image_converter.ipynb`), you will have to edit the variable `arguments_list` in cell 9 to match the above.
 
@@ -117,6 +119,6 @@ You are now ready to execute the Python notebooks in the `CNN/testing/` director
 
 You can simply execute `CNN/testing/malware_sorter.ipynb` or `CNN/testing/malware_sorter.py` to run the program. It is simpler to run the latter.
 
-	`python malware_sorter.py -d BYTECODES_DIR`
+`python malware_sorter.py -d BYTECODES_DIR`
 
 If you are executing the Python notebook instead (`CNN/testing/malware_sorter.ipynb`), you will have to edit the variable `arguments_list` in cell 10 to match the above.
